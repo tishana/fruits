@@ -9,7 +9,7 @@ app.use((req, res, next) => {
     console.log('I run for all routes')
     next();
 })
-app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({extended:true}))
 
 
 // set up view engine... ALWAYS above routes
